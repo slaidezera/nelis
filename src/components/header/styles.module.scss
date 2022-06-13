@@ -1,0 +1,154 @@
+//Header Principal
+
+.header {
+    border-bottom: solid 0.5px #62626262;
+    background-color: var(--pattern);
+    height: 4.6rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    backdrop-filter: blur(24px);
+
+    .grid {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1240px; 
+        margin: 0 auto;
+        height: 4.6rem;
+
+        padding: 0 1rem;
+    }
+
+    h2 {
+        display: flex;
+        align-items: center;
+        font-size: 1.70rem;
+        font-weight: bold;
+        color: var(--white);
+    }
+}
+
+//Navegation
+
+.navegation {
+    margin: 0 0.5rem;
+    height: 4.6rem;
+    display: flex;
+    align-items: center;
+
+    ul {
+        display: flex;
+
+        li {
+            & + li {
+                margin-left: 1.8rem;
+            }
+
+            a {
+                color: var(--black-600);
+                font-size: 1.1rem;
+                position: relative;
+
+                @media (max-width: 325px) {
+                    font-size: 1rem;
+                }
+
+                @media (max-width: 300px) {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+
+    a::after {
+        content: "";
+        width: 100%;
+        border-radius: 2px;
+        position: absolute;
+        transform: scaleX(0);
+        left: 0;
+        bottom: 0;
+        height: 1.3px;
+    
+        background: linear-gradient(270deg, #6610f2 0%, #17161d 100%);
+        transform-origin: left;
+        transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+    }
+    
+    a:hover {
+        color: var(--white);
+    }
+    
+      a:hover::after {
+    
+        transform: scaleX(1);
+        transform-origin: bottom right;
+    }
+
+}
+
+//Rede Sociais
+
+.social {
+    height: 4.6rem;
+    display: flex;
+    align-items: center;
+
+   a {
+        & + a {
+            margin-left: 1rem;
+        }
+
+        display: flex;
+        border-radius: 10px;
+        color: var(--white);
+        background-color: #3636369d;
+        padding: 9px;
+
+        svg {
+            font-size: 19px;
+        }
+   }
+
+   
+   button {
+    display: flex;
+    border-radius: 10px;
+    color: var(--white);
+    background-color: #3636369d;
+    padding: 9px;
+    margin: 0px 1rem 0px 0px;
+
+    svg {
+        font-size: 19px;
+    }
+}
+   a:hover {
+    filter: brightness(0.8);
+}
+
+button:hover {
+    filter: brightness(0.8);
+}
+
+}
+
+@media screen and(max-width:681px) {
+    .header h2 {
+        display: none;
+    }
+
+    .navegation {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+}
+
+@media screen and(max-width: 650px) {
+    .social {
+        display: none;
+    }
+}

@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --pattern: #0e091b;
+  --white: white;
+  --white-300: rgb(211, 211, 211);
+
+  --header: #3232328d;
+
+  --gray-100: #e1e1e6;
+  --gray-300: #202020;
+  --gray-500: #121214;
+  --gray-800: #616161;
+  --gray-850: #1f2729;
+
+  --black-100:rgb(90, 90, 90);
+  --black-300:#58585862;
+  --black-600: #909090;
+  --black-700:rgb(22, 22, 22);
+
+
+  --selection: rgb(77, 5, 149);
+
+  --yellow-500: yellow;	
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  background-color: var(--white);
+  color: var(--white);
+}
+
+
+
+@media screen and (max-width: 1080px) {
+  html {
+      font-size: 93,75%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  html {
+      font-size: 87.5%;
+  }
+}
+
+body, input, textarea, select, button {
+  font: 400 1rem "Roboto", sans-serif;
+}
+
+h1, h2, h3, h4, h5, span, p {
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #2d2d2dcd;
+  border-radius: 4px;
+}
+
+::selection {
+  background-color: var(--black-300);
+}
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+   text-decoration: none;
+}
+
+input:focus,
+button:focus {
+   border: 0;
+}
+
+button {
+   border: 0;
+}

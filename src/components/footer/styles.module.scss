@@ -1,0 +1,34 @@
+.footer {
+    background-color: #110e1b;
+
+    .grid {
+        max-width: 1240px; 
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+
+    .footerContent {
+        border-top: solid 0.5px #333333;
+        height: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        span {
+            font-size: 1.1rem;
+        }
+
+        
+        .return {
+            background-color: #252525;
+            padding: 6px;
+            border-radius: 99rem;
+            display: flex;
+            align-items: center;
+            .svg {
+                font-size: 2rem;
+                color: var(--white-300);
+            }
+        }
+    }
+}
