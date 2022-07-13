@@ -1,19 +1,12 @@
 import { Frields } from "./frields";
-
 import { Main } from "./home";
-
 import { KnowLedge } from "./knowledge";
-
 import { Project } from "./project";
-
 import { Service } from "./service";
-
-import styles from './styles.module.scss'
-
 import { Who } from "./who";
-
 import { ToastContainer } from 'react-nextjs-toast'
 
+import styles from './styles.module.scss'
 
 export function HomePage() {
     return (
@@ -35,7 +28,9 @@ export function HomePage() {
                         <Who 
                             who="Quem sou?"
                             profile="https://github.com/slaidezera.png"
-                            title="Olá, meu nome e Nelis Santiago, sou freelancer como Front-end developer && Ui designer, desenvolvo aplicaçoes de alto desempenho é concentrado em detalhes, responsivo."
+                            title="
+                            Olá, meu nome e Nelis Santiago, sou freelancer como Front-end developer && Ui designer, desenvolvo aplicaçoes de alto nivel concentrado em performance, detalhes e responsivo.
+                            "
                         />
                     </div>
                 </section>

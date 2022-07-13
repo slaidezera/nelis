@@ -40,13 +40,13 @@ export function KnowLedge() {
             </article>
             <article className={styles.wrapper}>
                 <div className={styles.react} id={styles.facebook}>
-                <span className={styles.tooltip}>TAILWIND</span>
+                <span className={styles.tooltip}>JAVASCRIPT</span>
                 <Image src={javascript} width={80} height={80}/>
                 </div>
             </article>
             <article className={styles.wrapper}>
                 <div className={styles.react} id={styles.facebook}>
-                <span className={styles.tooltip}>JAVASCRIPT</span>
+                <span className={styles.tooltip}>TAILWIND</span>
                 <Image src={tailwind} width={80} height={80}/>
                 </div>
             </article>

@@ -1,12 +1,9 @@
-import { Header } from '../components/header'
-import { ToastContainer } from 'react-nextjs-toast'
-
+import { AppProps } from 'next/app'
 import '../styles/globals.scss'
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <Header />
       <Component {...pageProps} />
     </>
   )

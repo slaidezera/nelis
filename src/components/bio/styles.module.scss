@@ -1,0 +1,180 @@
+
+.main {
+    height: 100vh;
+    padding: 0 1rem;
+    background-color: #080713;
+
+    .welcome {
+        position: absolute;
+        top: 10px;
+        right: 0.5%;
+        padding: 9px;
+  
+        background-color: #2256cf;
+        border-radius: 6px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+        .wrapper .react {
+            position: relative;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            animation: snow 3s infinite linear;
+          }
+          
+          .wrapper .tooltip {
+            position: absolute;
+            font-size: 14px;
+            width: 115px;
+            right: 33px;
+            top: 0;
+            text-align: center;
+            bottom: auto;
+            background-color: #272727;
+            color: #ffffff;
+            padding: 8px 8px;
+            border-radius: 5px;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+          }
+    
+      
+          .wrapper .react:hover .tooltip {
+            top: -6px;
+            opacity: 1;
+            visibility: visible;
+          }
+          
+          .wrapper .react:hover span,
+          .wrapper .react:hover .tooltip {
+            text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+          }
+          
+          .wrapper #facebook:hover,
+          .wrapper #facebook:hover .tooltip,
+          .wrapper #facebook:hover .tooltip::before {
+            color: #ffffff;
+          }
+      
+          @keyframes snow {
+            0% { background-position: 0 -400px; }
+            100% { background-position: 0 0; }
+          }
+  
+          svg {
+            font-size: 1.3rem;
+          }
+  
+          @media (max-width: 650px) {
+            right: 2%;
+            
+  
+            svg {
+                font-size: 1.5rem;
+            }
+          }
+    }
+  
+    .grid {
+        max-width: 550px;
+        margin: 0 auto;
+  
+        padding: 42px 12px 0px 12px;
+    }
+  
+    .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 1.8;
+  
+        img {
+            border-radius: 50%;
+            padding: 8px;
+            width: 160px;
+        }
+  
+        span {
+            margin-top: 5px;
+            font-size: 1.859rem;
+            font-weight: bold;
+        }
+  
+        strong {
+            font-size: 1.05rem;
+            font-weight: 500;
+            opacity: 0.8;
+        }
+    }
+  
+    .section_list {
+        margin-top: 45px;
+        padding-bottom: 1.5rem;
+  
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+  
+            a {
+                flex-basis: 200px;
+                flex: 1;
+                color: var(--white);
+  
+                article {
+                    border-radius: 4px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 25px 40px;
+                    transition: ease-out 0.5s;
+  
+                    span {
+                        display: flex;
+                        align-items: center;
+                        font-size: 1.5rem;
+                        font-weight: 500;
+  
+  
+                        .icon {
+                            font-size: 2rem;
+                            margin-right: 0.5rem;
+                        }
+                    }
+  
+                    &:hover {
+                            filter: brightness(0.8);
+                            transform: scale(1.05);
+                            transition: ease-out 0.5s;
+                        }
+                }
+                .discord {
+                    background: linear-gradient( 261.65deg, #1f1f21 0%, #2d2f31 100% )
+                }
+  
+                .instagram {
+                    background: linear-gradient( 45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100% );
+                }
+  
+                .whatsapp {
+                    background: linear-gradient(261deg, #179600b5 0%, #28de03cc 95%);
+                }
+  
+                .frield {
+                    background: linear-gradient(70deg, #270fc6e1 50%, #000fe788 95%);
+                }
+  
+                .portfolio {
+                    background: linear-gradient(70deg, #360773 13%, #7c45cd 95%);
+                }
+                .github {
+                    background: linear-gradient(60deg, #1e1d1f66 0%, #515052 95%);
+                }
+            }
+        }
+    }
+  }

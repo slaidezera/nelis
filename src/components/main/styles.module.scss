@@ -1,6 +1,4 @@
 .main {
-
-
   .home {
     background-color: var(--pattern);
 
@@ -46,7 +44,7 @@
         a {
           border: 1px solid rgba(102, 16, 242, 0.5);
           background: linear-gradient(225deg, rgba(102, 16, 242, 0.3) 0%, rgba(102, 16, 242, 0) 100%);
-          border-radius: 4px;
+          border-radius: 3px;
           padding: 20px 64px;
           font-size: 18px;
           color: var(--white);
@@ -75,6 +73,7 @@
     .image {
       margin-top: -3.5rem;
       animation: float 5s ease-in-out infinite;
+      padding: 0;
 
       @media (max-width: 904px) {
         display: none;
@@ -383,7 +382,7 @@
 
 .knowledge {
   background-color: var(--pattern);
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
   
 
     .grid {
@@ -398,6 +397,10 @@
     align-items: center;
     justify-content: center;
     font-size: 2.4rem;
+
+    .span {
+      color: #3772ff;
+    }
   }
 
   .content {
@@ -478,4 +481,4 @@
     }
 
   }
-  }
+}

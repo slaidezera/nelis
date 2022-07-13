@@ -43,7 +43,7 @@ export function Frields() {
     }
 
     function HandleCopyProfileFive() {
-        const name = "pgzin#7319"
+        const name = "Gabriel Santos#4770"
         navigator.clipboard.writeText(name)
 
         toast.notify(`${name}`, {
@@ -113,10 +113,10 @@ export function Frields() {
                 </article>
                 <article className={styles.frield}>
                     <div className={styles.image}>
-                        <img src="https://github.com/Piningazin.png" alt="" />
+                        <img src="https://github.com/gabrielbs21.png" alt="" />
                     </div>
-                    <span>Gabriel Pininga</span>
-                    <p>Developer Bukkit</p>
+                    <span>Gabriel Santos</span>
+                    <p>Developer Back-End</p>
                     <div className={styles.btn}>
                         <button onClick={HandleCopyProfileFive} type="button">
                                 Discord

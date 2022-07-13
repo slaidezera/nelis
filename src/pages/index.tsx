@@ -1,5 +1,7 @@
 import { Footer } from "../components/footer";
 
+import { Header } from '../components/header'
+
 import { HomePage } from "../components/main";
 
 import { useEffect } from "react";
@@ -7,6 +9,8 @@ import { useEffect } from "react";
 import  Aos  from 'aos'
 
 import 'aos/dist/aos.css'
+
+import Head from "next/head";
 
 export default function Home() {
 
@@ -16,8 +20,14 @@ export default function Home() {
 
   return (
     <>
+    <Head>
+      <title>Nelis Santiago - Inicio</title>
+    </Head>
+
+      <Header />
       <HomePage />
       <Footer />
+      
     </>
   )
 }
