@@ -6,7 +6,6 @@
 
 :root {
   --white: white;
-
   --header: #3232328d;
 
   --gray-100: #e1e1e6;
@@ -22,13 +21,14 @@
 
 
   --selection: rgb(77, 5, 149);
-
   --yellow-500: yellow;	
-
   --pattern: #0e091b;
   --white-300: rgb(211, 211, 211);
-
   --post-color: #27272a;
+}
+
+:focus {
+  outline: 0;
 }
 
 html {
@@ -37,7 +37,7 @@ html {
 
 html,
 body {
-  background-color: var(--white);
+  background-color: var(--color-background-default);
   color: var(--white);
 }
 

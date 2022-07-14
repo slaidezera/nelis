@@ -1,10 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import styles from './styles.module.scss'
+import Image from 'next/image'
 
 import { AiFillInstagram } from 'react-icons/ai'
-
 import { IoLogoWhatsapp } from 'react-icons/io'
-
 import { toast } from 'react-nextjs-toast'
 
 export function Frields() {
@@ -42,8 +41,52 @@ export function Frields() {
         })
     }
 
+    function HandleCopyProfileFour() {
+        const name = "zGetzinho ᴘᴋʏ#0001"
+        navigator.clipboard.writeText(name)
+
+        toast.notify(`${name}`, {
+            duration: 5,
+            type: "success",
+            title: "Usuario Copiado!",
+          })
+    }
+
     function HandleCopyProfileFive() {
         const name = "Gabriel Santos#4770"
+        navigator.clipboard.writeText(name)
+
+        toast.notify(`${name}`, {
+            duration: 5,
+            type: "success",
+            title: "Usuario Copiado!",
+          })
+    }
+    
+    function HandleCopyProfileSix() {
+        const name = "nunokkj ᴘᴋʏ#0003"
+        navigator.clipboard.writeText(name)
+
+        toast.notify(`${name}`, {
+            duration: 5,
+            type: "success",
+            title: "Usuario Copiado!",
+          })
+    }
+
+    function HandleCopyProfileSeven() {
+        const name = "UNARAK#9538"
+        navigator.clipboard.writeText(name)
+
+        toast.notify(`${name}`, {
+            duration: 5,
+            type: "success",
+            title: "Usuario Copiado!",
+          })
+    }
+
+    function HandleCopyProfileEight() {
+        const name = "Zinno#6545"
         navigator.clipboard.writeText(name)
 
         toast.notify(`${name}`, {
@@ -129,7 +172,78 @@ export function Frields() {
                         </a>
                     </div>
                 </article>
-                
+                <article className={styles.frield}>
+                    <div className={styles.image}>
+                        <img src="https://github.com/zGetzinho.png" alt="" />
+                    </div>
+                    <span>zGetzinho</span>
+                    <p>Ethical Hacking</p>
+                    <div className={styles.btn}>
+                            <button type="button" onClick={HandleCopyProfileFour}>
+                                Discord
+                            </button>
+                        <a href="" className={styles.inst}>
+                            <AiFillInstagram />
+                        </a>
+                        <a href="" className={styles.inst}>
+                            <IoLogoWhatsapp />
+                        </a>
+                    </div>
+                </article>
+                <article className={styles.frield}>
+                    <div className={styles.image}>
+                        <img src="https://github.com/Nuno001.png" alt="" />
+                    </div>
+                    <span>Nuno</span>
+                    <p>Developer Python</p>
+                    <div className={styles.btn}>
+                            <button type="button" onClick={HandleCopyProfileSix}>
+                                Discord
+                            </button>
+                        <a href="" className={styles.inst}>
+                            <AiFillInstagram />
+                        </a>
+                        <a href="" className={styles.inst}>
+                            <IoLogoWhatsapp />
+                        </a>
+                    </div>
+                </article>
+                <article className={styles.frield}>
+                    <div className={styles.image}>
+                        <img src="https://github.com/UNARAK.png" alt="" />
+                    </div>
+                    <span>UNARAK</span>
+                    <p>Sem Profissao</p>
+                    <div className={styles.btn}>
+                            <button type="button" onClick={HandleCopyProfileSeven}>
+                                Discord
+                            </button>
+                        <a href="" className={styles.inst}>
+                            <AiFillInstagram />
+                        </a>
+                        <a href="" className={styles.inst}>
+                            <IoLogoWhatsapp />
+                        </a>
+                    </div>
+                </article>
+                <article className={styles.frield}>
+                    <div className={styles.image}>
+                    <img src="https://github.com/Zinnoberanjos.png" alt="" />
+                    </div>
+                    <span>Zinno</span>
+                    <p>Ui Designer</p>
+                    <div className={styles.btn}>
+                            <button type="button" onClick={HandleCopyProfileEight}>
+                                Discord
+                            </button>
+                        <a href="https://github.com/slaidezera.png" className={styles.inst}>
+                            <AiFillInstagram />
+                        </a>
+                        <a href="" className={styles.inst}>
+                            <IoLogoWhatsapp />
+                        </a>
+                    </div>
+                </article>
             </div>
         </>
     )

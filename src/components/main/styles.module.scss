@@ -297,7 +297,7 @@
 
     .frield {
       border-radius: 6px;
-      flex: 1 1 150px;
+      flex: 1  1 150px; 
       display: flex;
       align-items: center;
       flex-direction: column;
@@ -371,9 +371,39 @@
       }
 
 
-      @media (max-width: 280px) {
-        padding: 14px 18px;
+      @media (max-width: 480px) {
+        margin: 8px;
+        padding: 12px 14px;
+
+        .image {
+          
+          img {
+            width: 90px;
+            height: 90px;
+          }
+        }
+
+        .span {
+          font-size: 1rem;
+        }
+
+        .btn {
+          width: 100%;
+
+          button {
+            height: 35px;
+            padding: 0 0.484em;
+            font-size: 0.9rem;
+          }
+        }
+
+        svg {
+          font-size: 1.5rem;
+        }
       }
+
+
+
     }
   }
 }
@@ -382,7 +412,7 @@
 
 .knowledge {
   background-color: var(--pattern);
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
   
 
     .grid {
